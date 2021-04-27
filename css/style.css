@@ -1,15 +1,12 @@
 :root {
     --black-color: #222222;
-    --pink-color: #F1E4E6;
-    --white-color: #FBFBFB;
-    --darkpink-color: #F16D7F;
+    --pink-color: #f1e4e6;
+    --white-color: #fbfbfb;
+    --darkpink-color: #f16d7f;
 }
-
-
 
 a {
     text-decoration: none;
-
 }
 
 body {
@@ -33,7 +30,7 @@ body {
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0 0 0 0)
+    clip: rect(0 0 0 0);
 }
 
 .header {
@@ -45,6 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header__logo {
@@ -70,15 +68,20 @@ body {
     top: -22px;
 }
 
-.header__navigation {
-    display: none;
-}
+.header__navigation {}
 
 .brand {
     display: flex;
-
-
+    position: relative;
 }
+
+.brand__wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+}
+
+
 
 .brand__image {}
 
@@ -88,6 +91,18 @@ body {
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
+
+
+}
+
+.brand__heading--text:before {
+    content: "";
+    background-color: var(--darkpink-color);
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    top: -10px;
+    left: -30px;
 }
 
 .brand__heading {
@@ -95,6 +110,8 @@ body {
     font-weight: 900;
     line-height: 38.4px;
     text-transform: uppercase;
+    position: relative;
+
 }
 
 .brand__heading--text {
@@ -121,7 +138,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .stocks__item-text {
@@ -134,13 +150,11 @@ body {
     color: var(--darkpink-color);
     font-size: 24px;
     line-height: 28.8px;
-
 }
 
 .stocks__item--woman {
     background-image: url(../imgs/art1.jpg);
 }
-
 
 .stocks__item--man {
     background-image: url(../imgs/art2.jpg);
@@ -172,17 +186,12 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: normal;
-
-
 }
 
 .products__heading-text {
     margin-top: 6px;
-    color: #9F9F9F;
-
-
+    color: #9f9f9f;
 }
-
 
 .products__list {
     display: flex;
@@ -194,18 +203,18 @@ body {
 .products__item {
     min-height: 420px;
     width: 360px;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     margin-top: 30px;
+    position: relative;
 }
 
-.products__item-img {}
 
 .products__item-heading {
     padding: 25px 0 0 18px;
 }
 
 .products__item-text {
-    color: #5D5D5D;
+    color: #5d5d5d;
     padding: 12.65px 0 0 18px;
     width: 320px;
 }
@@ -216,10 +225,6 @@ body {
 
     font-size: 16px;
     line-height: 19px;
-}
-
-.products__item-button {
-    display: none;
 }
 
 .products__link {
@@ -234,7 +239,6 @@ body {
     color: var(--darkpink-color);
     font-size: 16px;
     line-height: 19px;
-
 }
 
 .features {
@@ -243,7 +247,6 @@ body {
     min-height: 341px;
 
     display: flex;
-
 }
 
 .features__heading {
@@ -254,7 +257,7 @@ body {
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0 0 0 0)
+    clip: rect(0 0 0 0);
 }
 
 .features__list {
@@ -262,7 +265,6 @@ body {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .features__item {
@@ -284,15 +286,18 @@ body {
     line-height: 17px;
 }
 
-.footer {}
-
-.footer__wrap {
-    min-height: 448px;
+.footer {
     background-image: url(../imgs/background-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 448px;
+}
+
+.footer__wrap {
+    min-height: 448px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -312,12 +317,12 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-
 }
 
 .footer__subscribe {
     text-align: center;
     padding-right: 100px;
+
 }
 
 .footer__subscribe-heading {
@@ -327,17 +332,43 @@ body {
     font-weight: bold;
 }
 
-.footer__subscribe-text {}
 
-.footer__subscribe-form {}
 
-.subscribe__form-area {}
+.footer__subscribe-text {
+    font-size: 18px;
 
-.subscribe__form-button {}
+}
+
+.footer__subscribe-form {
+    display: flex;
+    padding-top: 32px;
+
+
+
+}
+
+.subscribe__form-area {
+    height: 50px;
+    width: 270px;
+    box-sizing: border-box;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding-left: 22px;
+}
+
+.subscribe__form-button {
+    width: 90px;
+    height: 50px;
+    border-radius: 0 50px 50px 0;
+    background-color: var(--darkpink-color);
+    border: none;
+    color: var(--white-color);
+
+}
 
 .footer__info {
     background-color: var(--black-color);
-
 }
 
 .footer__info-wrap {
