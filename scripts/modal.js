@@ -14,5 +14,6 @@ openMenuButton.addEventListener("click", function () {
 
 closeMenuButton.addEventListener("click", function () {
     navigationMenu.classList.remove("header__navigation--block");
+    brandWrapperAnimtation.classList.toggle("brand__wrapper-animtation");
     navigationMenu.classList.add("header__navigation--none");
 });
