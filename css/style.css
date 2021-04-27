@@ -355,7 +355,11 @@ body {
     border: none;
     border-radius: 50px 0 0 50px;
     padding-left: 22px;
+    outline: none;
+    font-size: 14px;
 }
+
+
 
 .subscribe__form-button {
     width: 90px;
