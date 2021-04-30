@@ -26,8 +26,6 @@
     background-color: var(--white-color);
     z-index: 3;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    border-left: 1px solid black;
-
 }
 
 

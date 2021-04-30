@@ -1,0 +1,145 @@
+:root {
+    --black-color: #222222;
+    --pink-color: #f1e4e6;
+    --white-color: #fbfbfb;
+    --darkpink-color: #f16d7f;
+}
+
+
+
+.heading__block {
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+    background: #F8F3F4
+}
+
+.heading__block-heading {
+    color: var(--darkpink-color);
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.registarion__block {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registarion__wrapper-form {
+    width: 359px;
+}
+
+.registarion__form {}
+
+.form__block {}
+
+.form__block-text {
+    font-size: 16px;
+    line-height: 19px;
+
+
+}
+
+.form__block-info {
+    width: 360px;
+    min-height: 45px;
+    margin-top: 20px;
+    border: 1px solid #A4A4A4;
+    padding-left: 17px;
+}
+
+.form__block-wrapper {
+    padding: 31.5px 0 35px 0;
+
+}
+
+.block__wrapper-radio {
+    display: none;
+}
+
+.block__wrapper-label {
+    margin: 25px;
+    position: relative;
+    font-size: 11px;
+    line-height: 13px;
+
+}
+
+.block__wrapper-label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+    position: absolute;
+    left: -24.6px;
+
+}
+
+.block__wrapper-radio:checked+.block__wrapper-label:before {
+    background-color: var(--darkpink-color);
+}
+
+.registarion__form-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding: 15.5px 0 39px 0;
+}
+
+.registarion__form-button {
+    width: 167px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Lato", sans-serif;
+    background-color: var(--darkpink-color);
+    color: var(--white-color);
+    border: none;
+    margin-bottom: 96px;
+}
+
+.registarion__form-button:after {
+    content: url(../imgs/arrow.svg);
+    padding-left: 15px;
+}
+
+.registarion__block-perks {
+    width: 610px;
+}
+
+.perks-heading {
+
+    text-transform: uppercase;
+    line-height: 29px;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+.perks-text {
+    padding-top: 22px;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.perks__wrapper-list {
+    padding-top: 21px;
+}
+
+.list__perks-item {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 16px;
+
+}
+
+.list__perks-item:before {
+    content: url(../imgs/check-mark.svg);
+    padding-right: 22px;
+
+}

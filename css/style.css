@@ -186,6 +186,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: normal;
+    font-weight: 400;
 }
 
 .products__heading-text {
@@ -290,6 +291,7 @@ body {
     background-image: url(../imgs/background-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left center;
     min-height: 448px;
 }
 
