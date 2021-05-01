@@ -5,8 +5,6 @@
     --darkpink-color: #f16d7f;
 }
 
-
-
 .heading__block {
     min-height: 148px;
     display: flex;
@@ -32,15 +30,9 @@
     width: 359px;
 }
 
-.registarion__form {}
-
-.form__block {}
-
 .form__block-text {
     font-size: 16px;
     line-height: 19px;
-
-
 }
 
 .form__block-info {
@@ -117,14 +109,12 @@
     line-height: 29px;
     font-weight: 300;
     font-size: 24px;
-
 }
 
 .perks-text {
     padding-top: 22px;
     font-size: 24px;
     line-height: 29px;
-
 }
 
 .perks__wrapper-list {
@@ -135,11 +125,9 @@
     font-size: 24px;
     line-height: 29px;
     padding-bottom: 16px;
-
 }
 
 .list__perks-item:before {
     content: url(../imgs/check-mark.svg);
     padding-right: 22px;
-
 }

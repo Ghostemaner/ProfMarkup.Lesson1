@@ -42,7 +42,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header__logo {
@@ -68,8 +67,6 @@ body {
     top: -22px;
 }
 
-.header__navigation {}
-
 .brand {
     display: flex;
     position: relative;
@@ -81,18 +78,12 @@ body {
     min-height: 100%;
 }
 
-
-
-.brand__image {}
-
 .brand__heading-wrapper {
     background-color: var(--pink-color);
     flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
-
-
 }
 
 .brand__heading--text:before {
@@ -173,8 +164,6 @@ body {
     /*accessories.jpg*/
 }
 
-.products {}
-
 .products__wrap-heading {
     width: 336px;
     text-align: center;
@@ -223,7 +212,6 @@ body {
 .products__item-text-pink {
     color: var(--darkpink-color);
     padding: 18px 0 20px 18px;
-
     font-size: 16px;
     line-height: 19px;
 }
@@ -246,7 +234,6 @@ body {
     margin-top: 95.5px;
     background-color: #222224;
     min-height: 341px;
-
     display: flex;
 }
 
@@ -270,7 +257,6 @@ body {
 
 .features__item {
     color: var(--white-color);
-
     width: 320px;
 }
 
@@ -297,7 +283,6 @@ body {
 
 .footer__wrap {
     min-height: 448px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,13 +293,8 @@ body {
     width: 360px;
 }
 
-.footer__quote-heading {}
-
-.footer__quote-img {}
-
 .footer__quote-text {
     margin-top: 32px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -334,19 +314,13 @@ body {
     font-weight: bold;
 }
 
-
-
 .footer__subscribe-text {
     font-size: 18px;
-
 }
 
 .footer__subscribe-form {
     display: flex;
     padding-top: 32px;
-
-
-
 }
 
 .subscribe__form-area {
@@ -361,8 +335,6 @@ body {
     font-size: 14px;
 }
 
-
-
 .subscribe__form-button {
     width: 90px;
     height: 50px;
@@ -370,7 +342,6 @@ body {
     background-color: var(--darkpink-color);
     border: none;
     color: var(--white-color);
-
 }
 
 .footer__info {
@@ -383,8 +354,6 @@ body {
     align-items: center;
     min-height: 79px;
 }
-
-.visually-hidden {}
 
 .footer__info-copy {
     color: var(--white-color);
