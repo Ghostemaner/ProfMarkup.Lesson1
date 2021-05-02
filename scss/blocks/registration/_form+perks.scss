@@ -1,0 +1,106 @@
+.registration {
+
+    .registarion__block {
+        padding-top: 64px;
+        display: flex;
+        justify-content: space-between;
+
+        .registarion__wrapper {
+            width: 359px;
+        }
+
+        .wrapper-form__text {
+            @include font(16px, 19px, 300);
+
+        }
+
+        .wrapper-form__block-info {
+            width: 360px;
+            min-height: 45px;
+            margin-top: 20px;
+            border: 1px solid #A4A4A4;
+            padding-left: 17px;
+        }
+
+        .radio-wrapper {
+            padding: 31.5px 0 35px 0;
+        }
+
+        .radio-wrapper__radio {
+            display: none;
+        }
+
+        .radio-wrapper__label {
+            margin: 25px;
+            position: relative;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        .radio-wrapper__label:before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border: 1px solid #A4A4A4;
+            border-radius: 50%;
+            position: absolute;
+            left: -24.6px;
+        }
+
+        .radio-wrapper__radio:checked+.radio-wrapper__label:before {
+            background-color: $darkpink-color;
+        }
+
+        .registration__form-text {
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            padding: 15.5px 0 39px 0;
+        }
+
+        .registration__form-button {
+            width: 167px;
+            height: 50px;
+            @include font(14px, 17px, 300px);
+            font-family: "Lato", sans-serif;
+            background-color: $darkpink-color;
+            color: $white-color;
+            border: none;
+            margin-bottom: 96px;
+        }
+
+        .registration__form-button:after {
+            content: url(../imgs/arrow.svg);
+            padding-left: 15px;
+        }
+
+        .registration__block-perks {
+            width: 610px;
+        }
+
+        .perks-heading {
+
+            text-transform: uppercase;
+            @include font(24px, 29px, 300px);
+        }
+
+        .perks-text {
+            @include font(24px, 29px, 300px);
+            padding-top: 22px;
+        }
+
+        .perks-list {
+            padding-top: 21px;
+        }
+
+        .perks-list__item {
+            @include font(24px, 29px, 300px);
+            padding-bottom: 16px;
+        }
+
+        .perks-list__item:before {
+            content: url(../imgs/check-mark.svg);
+            padding-right: 22px;
+        }
+    }
+}

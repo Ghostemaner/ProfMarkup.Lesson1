@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/registration.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +29,7 @@
                     <img class="header__cartlist" src="imgs/cart-list.svg" alt="cart-list"></a>
                 <!--здесь с помощью JS будет отображаться количество товаров в корзине-->
 
-                <nav class="header__navigation--none" id="menu">
+                <nav class="header__navigation-none" id="menu">
                     <button class="header__navigation-button" id="close"><img src="imgs/close-menu.svg"
                             alt="close"></button>
                     <h2 class="header__navigation-title">menu</h2>
@@ -73,50 +69,50 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="heading__block">
-            <div class="heading__wrapper container">
-                <h1 class="heading__block-heading">registarion</h1>
+    <main class="registration">
+        <section class="heading-block">
+            <div class="heading-block container">
+                <h1 class="heading-block__heading">registration</h1>
             </div>
         </section>
         <section class="registarion__block container">
-            <div class="registarion__wrapper-form">
-                <form class="registarion__form" action="endpoint" class="form">
-                    <fieldset class="form__block">
-                        <legend class="form__block-text">Your Name</legend>
-                        <input class="form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+            <div class="registarion__wrapper form-block">
+                <form class="form-block" action="endpoint" class="form">
+                    <fieldset class="wrapper-form">
+                        <legend class="wrapper-form__text">Your Name</legend>
+                        <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
                             placeholder="First Name" required>
-                        <input class="form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                        <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
                             placeholder="Last Name" required>
-                        <div class="form__block-wrapper">
-                            <input class="block__wrapper-radio" type="radio" id="male" name="sex" value="Male">
-                            <label class="block__wrapper-label" for="male">Male</label>
-                            <input class="block__wrapper-radio" type="radio" id="female" name="sex" value="Female">
-                            <label class="block__wrapper-label" for="female">Female</label>
+                        <div class="wrapper-form__wrapper radio-wrapper">
+                            <input class="radio-wrapper__radio" type="radio" id="male" name="sex" value="Male">
+                            <label class="radio-wrapper__label" for="male">Male</label>
+                            <input class="radio-wrapper__radio" type="radio" id="female" name="sex" value="Female">
+                            <label class="radio-wrapper__label" for="female">Female</label>
                         </div>
                     </fieldset>
-                    <fieldset class="form__block">
-                        <legend class="form__block-text">Login details</legend>
-                        <input class="form__block-info" type="email" placeholder="Email" required>
-                        <input class="form__block-info" type="password" placeholder="Password" required>
+                    <fieldset class="wrapper-form">
+                        <legend class="wrapper-form__text">Login details</legend>
+                        <input class="wrapper-form__block-info" type="email" placeholder="Email" required>
+                        <input class="wrapper-form__block-info" type="password" placeholder="Password" required>
                     </fieldset>
-                    <p class="registarion__form-text">Please use 8 or more characters, with at least 1 number and a
+                    <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a
                         mixture of uppercase and lowercase
                         letters</p>
-                    <button class="registarion__form-button">JOIN NOW</button>
+                    <button class="registration__form-button">JOIN NOW</button>
                 </form>
             </div>
-            <div class="registarion__block-perks">
+            <div class="registration__block-perks">
                 <p class="perks-heading">loyalty has its perks</p>
                 <p class="perks-text">Get in on the loyalty program where you can earn points and unlock serious perks.
                     Starting with these
                     as soon as you join:</p>
-                <ul class="perks__wrapper-list">
-                    <li class="list__perks-item">15% off welcome offer</li>
-                    <li class="list__perks-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="list__perks-item">$10 off a purchase on your birthday</li>
-                    <li class="list__perks-item">Early access to products</li>
-                    <li class="list__perks-item">Exclusive offers & rewards</li>
+                <ul class="perks-list">
+                    <li class="perks-list__item">15% off welcome offer</li>
+                    <li class="perks-list__item">Free shipping, returns and exchanges on all orders</li>
+                    <li class="perks-list__item">$10 off a purchase on your birthday</li>
+                    <li class="perks-list__item">Early access to products</li>
+                    <li class="perks-list__item">Exclusive offers & rewards</li>
                 </ul>
             </div>
         </section>

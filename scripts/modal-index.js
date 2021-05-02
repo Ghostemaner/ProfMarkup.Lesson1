@@ -7,13 +7,13 @@ let closeMenuButton = document.getElementById("close")
 let brandWrapperAnimtation = document.getElementById("brand__wrapper-animation")
 
 openMenuButton.addEventListener("click", function () {
-    navigationMenu.classList.toggle("header__navigation--none");
+    navigationMenu.classList.toggle("header__navigation-none");
     brandWrapperAnimtation.classList.toggle("brand__wrapper-animtation");
-    navigationMenu.classList.toggle("header__navigation--block");
+    navigationMenu.classList.toggle("header__navigation-block");
 });
 
 closeMenuButton.addEventListener("click", function () {
-    navigationMenu.classList.remove("header__navigation--block");
+    navigationMenu.classList.remove("header__navigation-block");
     brandWrapperAnimtation.classList.toggle("brand__wrapper-animtation");
-    navigationMenu.classList.add("header__navigation--none");
+    navigationMenu.classList.add("header__navigation-none");
 });
