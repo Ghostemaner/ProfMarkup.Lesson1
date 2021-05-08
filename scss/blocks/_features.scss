@@ -1,0 +1,30 @@
+.features {
+    margin-top: 95.5px;
+    background-color: #222224;
+    min-height: 341px;
+    display: flex;
+
+    .features__heading {
+        @include visual-hidden();
+    }
+
+    .features__list {
+        @include flex-center-space-between();
+        text-align: center;
+    }
+
+    .features__item {
+        color: $white-color;
+        width: 320px;
+    }
+
+    .features__item-heading {
+        margin-top: 26px;
+        @include font(19.96px, 24px, 300, normal);
+    }
+
+    .features__item-text {
+        margin-top: 16px;
+        @include font(13.972px, 17px, 300, normal);
+    }
+}

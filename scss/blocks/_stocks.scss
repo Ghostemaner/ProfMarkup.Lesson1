@@ -1,0 +1,44 @@
+.stocks {
+
+    .stocks__list {
+        @include flex-wrap-space-between();
+        padding-top: 64px;
+    }
+
+    .stocks__item {
+        width: 360px;
+        min-height: 260px;
+        text-align: center;
+        @include flex-center();
+
+        &--woman {
+            background-image: url(../imgs/art1.jpg);
+        }
+
+        &--man {
+            background-image: url(../imgs/art2.jpg);
+        }
+
+        &--kids {
+            background-image: url(../imgs/art3.jpg);
+        }
+
+        &--accessories {
+            width: 100%;
+            background-image: url(../imgs/art4.jpg);
+            margin-top: 30px;
+        }
+    }
+
+    .stocks__item-text {
+        color: $white-color;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .stocks__item-header {
+        color: $darkpink-color;
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+}

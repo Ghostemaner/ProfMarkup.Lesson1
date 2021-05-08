@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Lato;
+    @include font();
+}
+
+button {
+    font-family: Lato;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    @include visual-hidden();
+}

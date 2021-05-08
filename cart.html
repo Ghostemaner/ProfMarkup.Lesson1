@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration</title>
+    <title>cart</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
@@ -24,8 +24,8 @@
             <div>
                 <button class="header__menu-button" id="burger" type="button"><img src="imgs/burger.svg" alt="burger"
                         width="32" height="23"></button>
-                <a class="header__link" href="#"><img src="imgs/reg.svg" alt="registarion"></a>
-                <a class="header__link header__link-position" href="cart.html"><img src="imgs/cart.svg" alt="cart">
+                <a class="header__link" href="registration.html"><img src="imgs/reg.svg" alt="registarion"></a>
+                <a class="header__link header__link-position" href="#"><img src="imgs/cart.svg" alt="cart">
                     <img class="header__cartlist" src="imgs/cart-list.svg" alt="cart-list"></a>
                 <!--здесь с помощью JS будет отображаться количество товаров в корзине-->
                 <nav class="header__navigation-none" id="menu">
@@ -69,53 +69,88 @@
         </div>
     </header>
 
-    <main class="registration">
+    <main class="shopping-cart">
         <section class="heading-block">
             <div class="heading-block container">
-                <h1 class="heading-block__heading">registration</h1>
+                <h1 class="heading-block__heading">SHOPPING CART</h1>
             </div>
         </section>
-        <section class="registarion__block container">
-            <div class="registarion__wrapper form-block">
-                <form class="form-block" action="#">
-                    <fieldset class="wrapper-form">
-                        <legend class="wrapper-form__text">Your Name</legend>
-                        <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                            placeholder="First Name" required>
-                        <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                            placeholder="Last Name" required>
-                        <div class="wrapper-form__wrapper radio-wrapper">
-                            <input class="radio-wrapper__radio" type="radio" id="male" name="sex" value="Male">
-                            <label class="radio-wrapper__label" for="male">Male</label>
-                            <input class="radio-wrapper__radio" type="radio" id="female" name="sex" value="Female">
-                            <label class="radio-wrapper__label" for="female">Female</label>
+        <div class="shopping-wrapper container">
+            <section class="cart-list">
+                <div class="cart-list__wrapper">
+                    <div class="cart-block">
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
+                                src="./imgs/man-cart1.jpg" alt="man-cart1" width="262" height="306"></div>
+                        <div class="cart-block__block-items cart-items">
+                            <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart-items__list-desc desc-items">
+                                <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
+                                    </span><span class="cart-info__value-pink">$300</span></li>
+                                <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
+                                    </span><span class="cart-info__value">Red</span></li>
+                                <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
+                                    </span><span class="cart-info__value">Xl</span>
+                                </li>
+                                <li class="desc-items__item-quantity cart-info"><span class="cart-info__text">Quantity:
+                                    </span><input class="cart-info__value cart-info__value-input" type="text"
+                                        placeholder="2" pattern="^[ 0-9]+$" required></li>
+                            </ul>
+                            <button class="cart-items__button-close" type="button"><img class="cart-items__img-close"
+                                    src="imgs/close-menu.svg" alt="close"></button>
                         </div>
-                    </fieldset>
-                    <fieldset class="wrapper-form">
-                        <legend class="wrapper-form__text">Login details</legend>
-                        <input class="wrapper-form__block-info" type="email" placeholder="Email" required>
-                        <input class="wrapper-form__block-info" type="password" placeholder="Password" required>
-                    </fieldset>
-                    <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a
-                        mixture of uppercase and lowercase
-                        letters</p>
-                    <button class="registration__form-button" type="submit">JOIN NOW</button>
+                    </div>
+                    <div class="cart-block">
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
+                                src="./imgs/man-cart2.jpg" alt="man-cart2" width="262" height="306"></div>
+                        <div class="cart-block__block-items cart-items">
+                            <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart-items__list-desc desc-items">
+                                <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
+                                    </span><span class="cart-info__value-pink">$300</span></li>
+                                <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
+                                    </span><span class="cart-info__value">Red</span></li>
+                                <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
+                                    </span><span class="cart-info__value">Xl</span>
+                                </li>
+                                <li class="desc-items__item-quantity cart-info"><span class="cart-info__text">Quantity:
+                                    </span><input class="cart-info__value cart-info__value-input" type="text"
+                                        placeholder="2" pattern="^[ 0-9]+$" required></li>
+                            </ul>
+                            <button class="cart-items__button-close" type="button"><img class="cart-items__img-close"
+                                    src="imgs/close-menu.svg" alt="close"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-list__button-wrapper"><button class="cart-clear__button" type="button">CLEAR
+                        SHOPPING
+                        CART</button>
+                    <button class="cart-continue__button" type="button">CONTINUE SHOPPING</button>
+                </div>
+            </section>
+            <section class="delivery">
+                <form class="delivery__form" action="#">
+                    <div class="delivery__form-wrapper delivery-wrapper">
+                        <legend class="delivery-wrapper__text">SHIPPING ADRESS</legend>
+                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                            placeholder="Bangladesh" required>
+                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                            placeholder="State" required>
+                        <input class="delivery-wrapper__block-info" pattern="[0-9]{6}" type="text"
+                            placeholder="Postcode / Zip" required>
+                    </div>
+                    <button class="delivery__form-button" type="button">GET A QUOTE</button>
+                    <div class="checkout-delivery">
+                        <p class="sub-price"><span class="sub-price__text">SUB
+                                TOTAL</span><span class="sub-price__value"> $900</span></p>
+                        <p class="total-price"><span class="total-price__text">GRAND
+                                TOTAL</span><span class="total-price__value total-price__value-pink"> $900</span>
+                        </p>
+                        <hr class="hr">
+                        <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
+                    </div>
                 </form>
-            </div>
-            <div class="registration__block-perks">
-                <p class="perks-heading">loyalty has its perks</p>
-                <p class="perks-text">Get in on the loyalty program where you can earn points and unlock serious perks.
-                    Starting with these
-                    as soon as you join:</p>
-                <ul class="perks-list">
-                    <li class="perks-list__item">15% off welcome offer</li>
-                    <li class="perks-list__item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="perks-list__item">$10 off a purchase on your birthday</li>
-                    <li class="perks-list__item">Early access to products</li>
-                    <li class="perks-list__item">Exclusive offers & rewards</li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -151,6 +186,7 @@
                 </ul>
             </div>
         </section>
+
     </footer>
 
     <script src="scripts/modal-all.js"></script>

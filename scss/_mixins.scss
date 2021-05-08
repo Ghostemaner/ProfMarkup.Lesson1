@@ -1,0 +1,35 @@
+@mixin flex-center-space-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-wrap-space-between() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font($size: 14px, $height: 17px, $weight: 300, $style: normal) {
+    font-size: $size; //размер
+    line-height: $height; //отступ от текста
+    font-weight: $weight; // толщина
+    font-style: $style; //стиль
+}
+
+@mixin visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
