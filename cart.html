@@ -68,98 +68,92 @@
             </div>
         </div>
     </header>
+
     <main class="shopping-cart">
         <section class="heading-block">
             <div class="heading-block container">
                 <h1 class="heading-block__heading">SHOPPING CART</h1>
             </div>
         </section>
-        <form action="#">
-            <div class="shopping-wrapper container">
-                <section class="cart-list">
-                    <div class="cart-list__wrapper cart-blocks">
-                        <div class="cart-block">
-                            <div class="cart-block__img-wrapper wrapper-img"><img class="wrapper-img__img"
-                                    src="./imgs/man-cart1.jpg" alt="man-cart1" width="262" height="306"></div>
-                            <div class="block-items">
-                                <h3 class="block-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
-                                <ul class="block-items__list-desc desc-items">
-                                    <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
-                                        </span><span class="cart-info__value-pink">$300</span></li>
-                                    <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
-                                        </span><span class="cart-info__value">Red</span></li>
-                                    <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
-                                        </span><span class="cart-info__value">Xl</span>
-                                    </li>
-                                    <li class="desc-items__item-quantity cart-info"><span
-                                            class="cart-info__text">Quantity:
-                                        </span><input class="cart-info__value value-input__wrapper" type="text"
-                                            placeholder="2" pattern="^[ 0-9]+$" required></li>
-                                </ul>
-
-                                <button class="block-items__button-close" type="button"><img
-                                        class="block-items__img-close" src="imgs/close-menu.svg" alt="close"></button>
-                            </div>
-                        </div>
-                        <div class="cart-block">
-                            <div class="cart-block__img-wrapper wrapper-img"><img class="wrapper-img__img"
-                                    src="./imgs/man-cart2.jpg" alt="man-cart2" width="262" height="306"></div>
-                            <div class="block-items">
-                                <h3 class="block-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
-                                <ul class="block-items__list-desc desc-items">
-                                    <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
-                                        </span><span class="cart-info__value-pink">$300</span></li>
-                                    <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
-                                        </span><span class="cart-info__value">Red</span></li>
-                                    <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
-                                        </span><span class="cart-info__value">Xl</span>
-                                    </li>
-                                    <li class="desc-items__item-quantity cart-info"><span
-                                            class="cart-info__text">Quantity:
-                                        </span><input class="cart-info__value value-input__wrapper" type="text"
-                                            placeholder="2" pattern="^[ 0-9]+$" required></li>
-                                </ul>
-                                <button class="block-items__button-close" type="button"><img
-                                        class="block-items__img-close" src="imgs/close-menu.svg" alt="close"></button>
-                            </div>
+        <div class="shopping-wrapper container">
+            <section class="cart-list">
+                <div class="cart-list__wrapper">
+                    <div class="cart-block">
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
+                                src="./imgs/man-cart1.jpg" alt="man-cart1" width="262" height="306"></div>
+                        <div class="cart-block__block-items cart-items">
+                            <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart-items__list-desc desc-items">
+                                <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
+                                    </span><span class="cart-info__value-pink">$300</span></li>
+                                <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
+                                    </span><span class="cart-info__value">Red</span></li>
+                                <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
+                                    </span><span class="cart-info__value">Xl</span>
+                                </li>
+                                <li class="desc-items__item-quantity cart-info"><span class="cart-info__text">Quantity:
+                                    </span><input class="cart-info__value cart-info__value-input" type="text"
+                                        placeholder="2" pattern="^[ 0-9]+$" required></li>
+                            </ul>
+                            <button class="cart-items__button-close" type="button"><img class="cart-items__img-close"
+                                    src="imgs/close-menu.svg" alt="close"></button>
                         </div>
                     </div>
-                    <div class="cart-list__button-wrapper"><button class="clear-cart__button" type="button">CLEAR
-                            SHOPPING
-                            CART</button>
-                        <button class="continue-cart__button" type="button">CONTINUE SHOPPING</button>
+                    <div class="cart-block">
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
+                                src="./imgs/man-cart2.jpg" alt="man-cart2" width="262" height="306"></div>
+                        <div class="cart-block__block-items cart-items">
+                            <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
+                            <ul class="cart-items__list-desc desc-items">
+                                <li class="desc-items__item-price cart-info"><span class="cart-info__text">Price:
+                                    </span><span class="cart-info__value-pink">$300</span></li>
+                                <li class="desc-items__item-color cart-info"><span class="cart-info__text">Color:
+                                    </span><span class="cart-info__value">Red</span></li>
+                                <li class="desc-items__item-size cart-info"><span class="cart-info__text">Size:
+                                    </span><span class="cart-info__value">Xl</span>
+                                </li>
+                                <li class="desc-items__item-quantity cart-info"><span class="cart-info__text">Quantity:
+                                    </span><input class="cart-info__value cart-info__value-input" type="text"
+                                        placeholder="2" pattern="^[ 0-9]+$" required></li>
+                            </ul>
+                            <button class="cart-items__button-close" type="button"><img class="cart-items__img-close"
+                                    src="imgs/close-menu.svg" alt="close"></button>
+                        </div>
                     </div>
-                </section>
-                <section class="delivery">
-                    <form class="delivery__form" action="#">
-                        <div class="delivery__form wrapper-form">
-                            <legend class="wrapper-form__text">SHIPPING ADRESS</legend>
-                            <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                                placeholder="Bangladesh" required>
-                            <input class="wrapper-form__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                                placeholder="State" required>
-                            <input class="wrapper-form__block-info" pattern="[0-9]{6}" type="text"
-                                placeholder="Postcode / Zip" required>
-                        </div>
-                        <button class="delivery__form-button" type="button">GET A QUOTE</button>
-                        <div class="checkout-delivery">
-
-                            <p class="sub-price"><span class="sub-price__text">SUB
-                                    TOTAL</span><span class="sub-price__value"> $900</span></p>
-                            <p class="total-price"><span class="total-price__text">GRAND
-                                    TOTAL</span><span class="total-price__value total-price__value-pink"> $900</span>
-                            </p>
-                            <hr class="hr">
-                            <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
-                        </div>
-
-                    </form>
-                </section>
-            </div>
-        </form>
+                </div>
+                <div class="cart-list__button-wrapper"><button class="cart-clear__button" type="button">CLEAR
+                        SHOPPING
+                        CART</button>
+                    <button class="cart-continue__button" type="button">CONTINUE SHOPPING</button>
+                </div>
+            </section>
+            <section class="delivery">
+                <form class="delivery__form" action="#">
+                    <div class="delivery__form-wrapper delivery-wrapper">
+                        <legend class="delivery-wrapper__text">SHIPPING ADRESS</legend>
+                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                            placeholder="Bangladesh" required>
+                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                            placeholder="State" required>
+                        <input class="delivery-wrapper__block-info" pattern="[0-9]{6}" type="text"
+                            placeholder="Postcode / Zip" required>
+                    </div>
+                    <button class="delivery__form-button" type="button">GET A QUOTE</button>
+                    <div class="checkout-delivery">
+                        <p class="sub-price"><span class="sub-price__text">SUB
+                                TOTAL</span><span class="sub-price__value"> $900</span></p>
+                        <p class="total-price"><span class="total-price__text">GRAND
+                                TOTAL</span><span class="total-price__value total-price__value-pink"> $900</span>
+                        </p>
+                        <hr class="hr">
+                        <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
-    <footer class="footer">
 
+    <footer class="footer">
         <div class="footer__wrap container">
             <section class="footer__quote">
                 <h2 class="visually-hidden">reviews</h2>
@@ -180,7 +174,6 @@
             <div class="footer__info-wrap container">
                 <h2 class="visually-hidden">copyright</h2>
                 <p class="footer__info-copy">© 2021 Brand All Rights Reserved.</p>
-
                 <ul class="footer__socials-list">
                     <li class="footer__socials-item"><a href="#"><img src="imgs/facebook.svg" alt="facebook" width="32"
                                 height="32"></a></li>
@@ -195,7 +188,9 @@
         </section>
 
     </footer>
+
     <script src="scripts/modal-all.js"></script>
+
 </body>
 
 </html>

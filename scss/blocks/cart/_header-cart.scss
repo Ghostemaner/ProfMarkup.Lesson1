@@ -2,8 +2,7 @@
 
     .heading-block {
         min-height: 148px;
-        display: flex;
-        align-items: center;
+        @include flex-center-space-between();
         background: #F8F3F4;
     }
 

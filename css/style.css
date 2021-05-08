@@ -615,6 +615,7 @@ button {
 .registration .heading-block {
   min-height: 148px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: #F8F3F4;
 }
@@ -748,9 +749,15 @@ button {
   padding-right: 22px;
 }
 
+.shopping-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .shopping-cart .heading-block {
   min-height: 148px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: #F8F3F4;
 }
@@ -763,16 +770,11 @@ button {
   text-transform: uppercase;
 }
 
-.shopping-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .cart-list {
   padding-top: 96px;
 }
 
-.cart-block {
+.cart-list .cart-block {
   display: flex;
   width: 652px;
   min-height: 306px;
@@ -780,12 +782,12 @@ button {
   padding-bottom: 40px;
 }
 
-.wrapper-img {
+.cart-list .cart-img {
   width: 262px;
   height: 306px;
 }
 
-.block-items {
+.cart-list .cart-block__block-items {
   width: 390px;
   min-height: 306px;
   background-color: #FBFBFB;
@@ -794,45 +796,48 @@ button {
   box-sizing: border-box;
 }
 
-.block-items__heading-cart {
-  font-weight: normal;
+.cart-list .cart-items__heading-cart {
   font-size: 24px;
   line-height: 29px;
+  font-weight: normal;
+  font-style: normal;
   width: 201px;
   padding-bottom: 36px;
 }
 
-.block-items__list-desc {
-  font-style: normal;
-  font-weight: normal;
+.cart-list .cart-items__list-desc {
   font-size: 22px;
   line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
 }
 
-.desc-items {
+.cart-list .desc-items {
   color: #575757;
 }
 
-.cart-info {
+.cart-list .cart-info {
   padding-top: 6px;
 }
 
-.cart-info__value-pink {
+.cart-list .cart-info__value-pink {
   color: #F16D7F;
 }
 
-.value-input__wrapper {
+.cart-list .cart-info__value-input {
   border: 1px solid #EAEAEA;
   width: 43.19px;
   height: 24.12px;
   margin-left: 15px;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
   margin-left: 24px;
   text-align: center;
 }
 
-.block-items__button-close {
+.cart-list .cart-items__button-close {
   position: absolute;
   right: 22px;
   top: 28px;
@@ -840,33 +845,34 @@ button {
   background-color: #FBFBFB;
 }
 
-.cart-list__button-wrapper {
+.cart-list .cart-list__button-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 128px;
 }
 
-.clear-cart__button {
+.cart-list .cart-clear__button {
   width: 235px;
   height: 50px;
   background-color: white;
   border: 1px solid #A4A4A4;
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.continue-cart__button {
+.cart-list .cart-continue__button {
   width: 225px;
   height: 50px;
   background-color: white;
   border: 1px solid #A4A4A4;
-  font-style: normal;
-  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .delivery {
@@ -874,14 +880,14 @@ button {
   width: 360px;
 }
 
-.wrapper-form__text {
-  font-style: normal;
-  font-weight: 300;
+.delivery-wrapper__text {
   font-size: 16px;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.wrapper-form__block-info {
+.delivery-wrapper__block-info {
   width: 360px;
   min-height: 45px;
   margin-top: 20px;
@@ -904,42 +910,43 @@ button {
   width: 100.39px;
   height: 34px;
   background: none;
-  font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
+  font-weight: 300;
+  font-style: normal;
+  color: #A4A4A4;
   margin-top: 24px;
 }
 
 .sub-price {
-  font-style: normal;
-  font-weight: normal;
   font-size: 11px;
   line-height: 13px;
+  font-weight: normal;
+  font-style: normal;
   padding: 39px 34px 12px;
 }
 
 .sub-price__text {
   padding-right: 20px;
   font-weight: 400;
-  color: #4A4A4A;
+  color: #A4A4A4;
 }
 
 .sub-price__value {
-  color: #4A4A4A;
+  color: #A4A4A4;
 }
 
 .total-price {
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   padding: 0 37px 13px;
 }
 
 .total-price__text {
   padding-right: 18px;
-  color: #4A4A4A;
+  color: #A4A4A4;
 }
 
 .total-price__value-pink {
@@ -959,10 +966,10 @@ button {
   background-color: #F16D7F;
   border: none;
   color: #FBFBFB;
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
   position: absolute;
   left: 44px;
   bottom: 42px;

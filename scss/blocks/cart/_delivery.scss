@@ -3,22 +3,15 @@
     width: 360px;
 }
 
-.delivery__form {}
-
-.wrapper-form {}
-
-.wrapper-form__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+.delivery-wrapper__text {
+    @include font(16px, 19px, 300, normal);
 }
 
-.wrapper-form__block-info {
+.delivery-wrapper__block-info {
     width: 360px;
     min-height: 45px;
     margin-top: 20px;
-    border: 1px solid #A4A4A4;
+    border: 1px solid $light-gray;
     padding-left: 17px;
     box-sizing: border-box;
 }
@@ -34,57 +27,39 @@
 }
 
 .delivery__form-button {
-    border: 1px solid #A4A4A4;
+    border: 1px solid $light-gray;
     width: 100.39px;
     height: 34px;
     background: none;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
+    @include font(11px, 13px, 300, normal);
+    color: $light-gray;
     margin-top: 24px;
-
 }
 
-
-
 .sub-price {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
+    @include font(11px, 13px, normal, normal);
     padding: 39px 34px 12px;
-
-
-
 }
 
 .sub-price__text {
     padding-right: 20px;
     font-weight: 400;
-    color: #4A4A4A;
+    color: $light-gray;
 }
 
 .sub-price__value {
-    color: #4A4A4A;
+    color: $light-gray;
 }
 
 .total-price {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px, 19px, 300, normal);
     padding: 0 37px 13px;
-
 }
 
 .total-price__text {
     padding-right: 18px;
-    color: #4A4A4A;
-
+    color: $light-gray;
 }
-
-.total-price__value {}
 
 .total-price__value-pink {
     color: $darkpink-color;
@@ -103,10 +78,7 @@
     background-color: $darkpink-color;
     border: none;
     color: $white-color;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px, 19px, 300, normal);
     position: absolute;
     left: 44px;
     bottom: 42px;
