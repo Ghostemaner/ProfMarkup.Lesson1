@@ -1,6 +1,7 @@
 .header {
     background-color: $black-color;
 
+
     .header__wrapper {
         min-height: 75px;
         @include flex-center-space-between();
@@ -17,6 +18,10 @@
 
     .header__link {
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .header__link-position {

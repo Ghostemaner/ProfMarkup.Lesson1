@@ -4,6 +4,14 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 97px;
+
+        @include tablet {
+            margin-top: 155px
+        }
+
+        @include mobile {
+            margin-top: 64px
+        }
     }
 
     .products__heading-heading {
@@ -21,7 +29,17 @@
     .products__list {
         @include flex-wrap-space-between();
         margin-top: 18px;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
     }
+
 
     .products__item {
         min-height: 420px;
@@ -30,7 +48,6 @@
         margin-top: 30px;
         position: relative;
     }
-
 
     .products__item-heading {
         padding: 25px 0 0 18px;
@@ -57,5 +74,19 @@
         margin-top: 48.5px;
         color: $darkpink-color;
         @include font(16px, 19px, 300, normal);
+
+        @include tablet {
+            margin-top: 33px;
+        }
+
+        @include mobile {
+            margin-top: 41.11px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1599px) {
+    .container--tablet {
+        width: 97.5%;
     }
 }

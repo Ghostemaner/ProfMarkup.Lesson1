@@ -11,11 +11,30 @@
     .features__list {
         @include flex-center-space-between();
         text-align: center;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 310px;
+        }
+
+        @include mobile {
+            width: 310px;
+        }
     }
 
     .features__item {
         color: $white-color;
         width: 320px;
+        min-height: auto;
+
+
+        @include tablet {
+            width: 100%;
+            min-height: auto;
+            padding-top: 48px;
+        }
     }
 
     .features__item-heading {
@@ -25,6 +44,18 @@
 
     .features__item-text {
         margin-top: 16px;
+
         @include font(13.972px, 17px, 300, normal);
+
+    }
+
+    .features__item-text--padding {
+        @include tablet {
+            padding-bottom: 64px;
+        }
+
+        @include mobile {
+            padding-bottom: 81px;
+        }
     }
 }

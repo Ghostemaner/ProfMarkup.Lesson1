@@ -33,3 +33,15 @@
     border: 0;
     clip: rect(0 0 0 0);
 }
+
+@mixin tablet {
+    @media (max-width: $max-tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $max-mobile-width) {
+        @content;
+    }
+}
