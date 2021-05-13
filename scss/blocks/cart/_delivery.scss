@@ -14,12 +14,6 @@
         padding: 0;
     }
 
-    .delivery__form {
-        @media only screen and (min-width: 767px) and (max-width: 1260px) {
-            display: flex;
-        }
-    }
-
     .delivery-wrapper__text {
         @include font(16px, 19px, 300, normal);
     }
@@ -35,13 +29,14 @@
 
     .checkout-delivery {
         background-color: #F5F3F3;
-        width: 359px;
+        width: 358px;
         height: 214px;
         margin-top: 57.5px;
         position: relative;
         text-align: right;
 
-        @media only screen and (min-width: 767px) and (max-width: 1260px) {
+        @media only screen and (min-width: 768px) and (max-width: 1260px) {
+            flex-wrap: wrap;
             position: absolute;
             bottom: 149px;
             right: 0;
@@ -49,6 +44,8 @@
 
         @include mobile {
             margin-bottom: 96px;
+            padding: 0;
+            position: relative;
         }
     }
 
@@ -62,7 +59,7 @@
         color: $light-gray;
         margin-top: 24px;
 
-        @media only screen and (min-width: 767px) and (max-width: 1260px) {
+        @media only screen and (min-width: 768px) and (max-width: 1260px) {
             margin-bottom: 129px;
         }
 

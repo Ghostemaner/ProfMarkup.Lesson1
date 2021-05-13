@@ -1486,12 +1486,6 @@ button {
   }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1260px) {
-  .delivery .delivery__form {
-    display: flex;
-  }
-}
-
 .delivery .delivery-wrapper__text {
   font-size: 16px;
   line-height: 19px;
@@ -1510,15 +1504,16 @@ button {
 
 .delivery .checkout-delivery {
   background-color: #F5F3F3;
-  width: 359px;
+  width: 358px;
   height: 214px;
   margin-top: 57.5px;
   position: relative;
   text-align: right;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1260px) {
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
   .delivery .checkout-delivery {
+    flex-wrap: wrap;
     position: absolute;
     bottom: 149px;
     right: 0;
@@ -1528,6 +1523,8 @@ button {
 @media (max-width: 767px) {
   .delivery .checkout-delivery {
     margin-bottom: 96px;
+    padding: 0;
+    position: relative;
   }
 }
 
@@ -1545,7 +1542,7 @@ button {
   margin-top: 24px;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1260px) {
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
   .delivery .delivery__form-button {
     margin-bottom: 129px;
   }
