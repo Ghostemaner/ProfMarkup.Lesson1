@@ -3,7 +3,11 @@
     .heading-block {
         min-height: 148px;
         @include flex-center-space-between();
-        background: #F8F3F4
+        background: #F8F3F4;
+
+        @include mobile {
+            justify-content: center;
+        }
     }
 
     .heading-block__heading {

@@ -21,8 +21,7 @@
         background-color: $pink-color;
         flex-grow: 1;
         padding: 0 0 0 92px;
-        display: flex;
-        align-items: center;
+        @include flex-center-space-between();
 
         @include tablet {
             padding: 0 0 0 69px;

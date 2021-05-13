@@ -31,3 +31,15 @@ button {
         width: 92%;
     }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1599px) {
+    .container--tablet {
+        width: 97.5%;
+    }
+}
+
+@media (max-width: $max-mobile-width) {
+    .container--mobile {
+        width: 95%;
+    }
+}

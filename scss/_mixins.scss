@@ -4,17 +4,35 @@
     align-items: center;
 }
 
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-coulmn-items-center {
+    flex-direction: column;
+    align-items: center;
+}
+
 @mixin flex-wrap-space-between() {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-@mixin flex-center() {
+@mixin flex-wrap-space-around {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+@mixin flex-wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 @mixin font($size: 14px, $height: 17px, $weight: 300, $style: normal) {
     font-size: $size; //размер

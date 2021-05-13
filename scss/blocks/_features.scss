@@ -13,9 +13,7 @@
         text-align: center;
 
         @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            @include flex-wrap-center();
             width: 310px;
         }
 
@@ -46,7 +44,6 @@
         margin-top: 16px;
 
         @include font(13.972px, 17px, 300, normal);
-
     }
 
     .features__item-text--padding {

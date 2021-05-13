@@ -15,10 +15,7 @@
     }
 
     .products__heading-heading {
-        font-size: 30px;
-        line-height: 36px;
-        font-weight: normal;
-        font-weight: 400;
+        @include font(30px, 36px, 400, normal)
     }
 
     .products__heading-text {
@@ -31,15 +28,9 @@
         margin-top: 18px;
 
         @include tablet {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        @include mobile {
-            flex-wrap: wrap;
+            @include flex-wrap-space-around();
         }
     }
-
 
     .products__item {
         min-height: 420px;
@@ -82,11 +73,5 @@
         @include mobile {
             margin-top: 41.11px;
         }
-    }
-}
-
-@media only screen and (min-width: 767px) and (max-width: 1599px) {
-    .container--tablet {
-        width: 97.5%;
     }
 }

@@ -4,13 +4,15 @@
         min-height: 148px;
         @include flex-center-space-between();
         background: #F8F3F4;
+
+        @include mobile {
+            justify-content: center;
+        }
     }
 
     .heading-block__heading {
         color: $darkpink-color;
-        font-size: 24px;
-        line-height: 29px;
-        font-weight: normal;
+        @include font(24px, 29px, normal, normal);
         text-transform: uppercase;
     }
 }

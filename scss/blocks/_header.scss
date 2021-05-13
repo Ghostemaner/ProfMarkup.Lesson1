@@ -1,7 +1,6 @@
 .header {
     background-color: $black-color;
 
-
     .header__wrapper {
         min-height: 75px;
         @include flex-center-space-between();

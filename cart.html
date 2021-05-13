@@ -71,16 +71,16 @@
 
     <main class="shopping-cart">
         <section class="heading-block">
-            <div class="heading-block container">
+            <div class="heading-block container container--tablet">
                 <h1 class="heading-block__heading">SHOPPING CART</h1>
             </div>
         </section>
-        <div class="shopping-wrapper container">
+        <div class="shopping-wrapper container container--tablet container--mobile">
             <section class="cart-list">
                 <div class="cart-list__wrapper">
                     <div class="cart-block">
                         <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
-                                src="./imgs/man-cart1.jpg" alt="man-cart1" width="262" height="306"></div>
+                                src="./imgs/man-cart1.jpg" alt="man-cart1" width="" height=""></div>
                         <div class="cart-block__block-items cart-items">
                             <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
                             <ul class="cart-items__list-desc desc-items">
@@ -101,7 +101,7 @@
                     </div>
                     <div class="cart-block">
                         <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
-                                src="./imgs/man-cart2.jpg" alt="man-cart2" width="262" height="306"></div>
+                                src="./imgs/man-cart2.jpg" alt="man-cart2" width="" height=""></div>
                         <div class="cart-block__block-items cart-items">
                             <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
                             <ul class="cart-items__list-desc desc-items">
@@ -120,16 +120,18 @@
                                     src="imgs/close-menu.svg" alt="close"></button>
                         </div>
                     </div>
+
                 </div>
-                <div class="cart-list__button-wrapper"><button class="cart-clear__button" type="button">CLEAR
-                        SHOPPING
-                        CART</button>
-                    <button class="cart-continue__button" type="button">CONTINUE SHOPPING</button>
+                <div class="cart-list__button-wrapper"><button class="cart-clear__button" type="button">Clear
+                        shopping
+                        cart</button>
+                    <button class="cart-continue__button" type="button">Continue shopping</button>
                 </div>
             </section>
             <section class="delivery">
+
                 <form class="delivery__form" action="#">
-                    <div class="delivery__form-wrapper delivery-wrapper">
+                    <div class="delivery__form-wrapper  delivery-wrapper">
                         <legend class="delivery-wrapper__text">SHIPPING ADRESS</legend>
                         <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
                             placeholder="Bangladesh" required>
@@ -137,8 +139,9 @@
                             placeholder="State" required>
                         <input class="delivery-wrapper__block-info" pattern="[0-9]{6}" type="text"
                             placeholder="Postcode / Zip" required>
+                        <button class="delivery__form-button" type="button">Get a quote</button>
                     </div>
-                    <button class="delivery__form-button" type="button">GET A QUOTE</button>
+
                     <div class="checkout-delivery">
                         <p class="sub-price"><span class="sub-price__text">SUB
                                 TOTAL</span><span class="sub-price__value"> $900</span></p>
@@ -147,9 +150,10 @@
                         </p>
                         <hr class="hr">
                         <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
-                    </div>
                 </form>
-            </section>
+
+        </div>
+        </section>
         </div>
     </main>
 

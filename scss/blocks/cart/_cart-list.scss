@@ -1,36 +1,88 @@
 .cart-list {
     padding-top: 96px;
 
+    @include tablet {
+        padding-top: 59px;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 39px;
+    }
+
+    .cart-list__wrapper {
+        @media only screen and (min-width: 767px) and (max-width: 1260px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     .cart-block {
         display: flex;
         width: 652px;
         min-height: 306px;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
         padding-bottom: 40px;
+
+        @include tablet {
+            width: 750px;
+        }
+
+        @include mobile {
+            filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+            width: 359px;
+            min-height: 188px;
+            padding-bottom: 32px;
+        }
     }
 
-    .cart-img {
-        width: 262px;
-        height: 306px;
+    .cart-img__img {
+        @include mobile {
+            width: 144px;
+            height: 188px;
+        }
     }
 
     .cart-block__block-items {
         width: 390px;
-        min-height: 306px;
+        max-height: 490px;
         background-color: $white-color;
         position: relative;
         padding: 22px 0 0 31px;
         box-sizing: border-box;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            max-width: 215px;
+            height: 188px;
+            padding: 13.52px 35.26px 0 17px;
+        }
     }
 
     .cart-items__heading-cart {
         @include font(24px, 29px, normal, normal);
         width: 201px;
         padding-bottom: 36px;
+
+        @include mobile {
+            @include font(16px, 19px, normal, normal);
+            width: 140px;
+            padding-bottom: 20px;
+        }
     }
 
     .cart-items__list-desc {
         @include font(22px, 26px, normal, normal);
+
+        @include mobile {
+            @include font(14px, 17px, normal, normal);
+        }
     }
 
     .desc-items {
@@ -39,6 +91,10 @@
 
     .cart-info {
         padding-top: 6px;
+
+        @include mobile {
+            padding-top: 3.5px;
+        }
     }
 
     .cart-info__value-pink {
@@ -53,6 +109,12 @@
         @include font(18px, 22px, 300, normal);
         margin-left: 24px;
         text-align: center;
+
+        @include mobile {
+            width: 20px;
+            height: 12.04px;
+            font-size: 11px;
+        }
     }
 
     .cart-items__button-close {
@@ -61,12 +123,30 @@
         top: 28px;
         border: none;
         background-color: $white-color;
+
+        @include mobile {
+            top: 16.52px;
+            right: 5px;
+        }
     }
 
     .cart-list__button-wrapper {
         @include flex-center-space-between();
         padding-top: 32px;
         padding-bottom: 128px;
+        width: auto;
+
+        @media only screen and (min-width: 767px) and (max-width: 1260px) {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 65px;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding-bottom: 48.5px;
+            padding-top: 0;
+        }
     }
 
     .cart-clear__button {
@@ -74,7 +154,17 @@
         height: 50px;
         background-color: $clear-white-color;
         border: 1px solid $light-gray;
+        margin-right: 40px;
+        text-transform: uppercase;
         @include font(14px, 17px, 300, normal);
+
+        @include mobile {
+            @include font(12px, 14px, normal, normal);
+            width: 174px;
+            height: 33px;
+            margin-right: 10px;
+            text-transform: none;
+        }
     }
 
     .cart-continue__button {
@@ -82,6 +172,14 @@
         height: 50px;
         background-color: $clear-white-color;
         border: 1px solid $light-gray;
+        text-transform: uppercase;
         @include font(14px, 17px, 300, normal);
+
+        @include mobile {
+            @include font(12px, 14px, normal, normal);
+            width: 174px;
+            height: 33px;
+            text-transform: none;
+        }
     }
 }
