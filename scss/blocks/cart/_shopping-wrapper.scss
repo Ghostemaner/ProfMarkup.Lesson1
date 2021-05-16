@@ -1,4 +1,18 @@
 .shopping-wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        justify-content: space-around;
+        position: relative;
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1260px) {
+        flex-direction: column;
+
+    }
+
+    @include mobile {
+        @include flex-coulmn-items-center();
+    }
 }

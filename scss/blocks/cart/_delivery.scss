@@ -1,85 +1,120 @@
 .delivery {
     padding: 113px;
-    width: 360px;
-}
+    width: 359px;
 
-.delivery-wrapper__text {
-    @include font(16px, 19px, 300, normal);
-}
+    @media only screen and (min-width: 1259px) and (max-width: 1599px) {
+        padding: 113px 0 113px 113px;
+    }
 
-.delivery-wrapper__block-info {
-    width: 360px;
-    min-height: 45px;
-    margin-top: 20px;
-    border: 1px solid $light-gray;
-    padding-left: 17px;
-    box-sizing: border-box;
-}
+    @media only screen and (min-width: 767px) and (max-width: 1259px) {
+        padding: 0;
+    }
 
-.checkout-delivery {
-    background-color: #F5F3F3;
-    min-width: 360px;
-    height: 214px;
-    margin-top: 57.5px;
-    position: relative;
-    text-align: right;
+    @include mobile {
+        padding: 0;
+    }
 
-}
+    .delivery-wrapper__text {
+        @include font(16px, 19px, 300, normal);
+    }
 
-.delivery__form-button {
-    border: 1px solid $light-gray;
-    width: 100.39px;
-    height: 34px;
-    background: none;
-    @include font(11px, 13px, 300, normal);
-    color: $light-gray;
-    margin-top: 24px;
-}
+    .delivery-wrapper__block-info {
+        width: 358px;
+        min-height: 45px;
+        margin-top: 20px;
+        border: 1px solid $light-gray;
+        padding-left: 17px;
+        box-sizing: border-box;
+    }
 
-.sub-price {
-    @include font(11px, 13px, normal, normal);
-    padding: 39px 34px 12px;
-}
+    .checkout-delivery {
+        background-color: #F5F3F3;
+        width: 358px;
+        height: 214px;
+        margin-top: 57.5px;
+        position: relative;
+        text-align: right;
 
-.sub-price__text {
-    padding-right: 20px;
-    font-weight: 400;
-    color: $light-gray;
-}
+        @media only screen and (min-width: 768px) and (max-width: 1260px) {
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 149px;
+            right: 0;
+        }
 
-.sub-price__value {
-    color: $light-gray;
-}
+        @include mobile {
+            margin-bottom: 96px;
+            padding: 0;
+            position: relative;
+        }
+    }
 
-.total-price {
-    @include font(16px, 19px, 300, normal);
-    padding: 0 37px 13px;
-}
+    .delivery__form-button {
+        border: 1px solid $light-gray;
+        width: 100.39px;
+        height: 34px;
+        background: none;
+        text-transform: uppercase;
+        @include font(11px, 13px, 300, normal);
+        color: $light-gray;
+        margin-top: 24px;
 
-.total-price__text {
-    padding-right: 18px;
-    color: $light-gray;
-}
+        @media only screen and (min-width: 768px) and (max-width: 1260px) {
+            margin-bottom: 129px;
+        }
 
-.total-price__value-pink {
-    color: $darkpink-color;
-    font-weight: 700;
-}
+        @include mobile {
+            @include font(11px, 13px, 400, normal);
+            text-transform: none;
+            color: #575757;
+        }
+    }
 
-.hr {
-    border: 0;
-    border-bottom: 3px solid #e2e2e2;
-    width: 275px;
-}
+    .sub-price {
+        @include font(11px, 13px, normal, normal);
+        padding: 39px 34px 12px;
+    }
 
-.delivery__button-checkout {
-    width: 274px;
-    height: 50px;
-    background-color: $darkpink-color;
-    border: none;
-    color: $white-color;
-    @include font(16px, 19px, 300, normal);
-    position: absolute;
-    left: 44px;
-    bottom: 42px;
+    .sub-price__text {
+        padding-right: 20px;
+        font-weight: 400;
+        color: $light-gray;
+    }
+
+    .sub-price__value {
+        color: $light-gray;
+    }
+
+    .total-price {
+        @include font(16px, 19px, 300, normal);
+        padding: 0 37px 13px;
+    }
+
+    .total-price__text {
+        padding-right: 18px;
+        color: $light-gray;
+    }
+
+    .total-price__value-pink {
+        color: $darkpink-color;
+        font-weight: 700;
+    }
+
+    .hr {
+        border: 0;
+        border-bottom: 3px solid #e2e2e2;
+        width: 275px;
+    }
+
+    .delivery__button-checkout {
+        width: 274px;
+        height: 50px;
+        background-color: $darkpink-color;
+        border: none;
+        color: $white-color;
+        @include font(16px, 19px, 300, normal);
+        position: absolute;
+        left: 44px;
+        bottom: 42px;
+    }
 }

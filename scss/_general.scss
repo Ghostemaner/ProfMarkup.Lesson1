@@ -12,10 +12,34 @@ button {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
 .visually-hidden {
     @include visual-hidden();
+}
+
+@media (max-width: $max-tablet-width) {
+    .container {
+        width: 90.7%;
+    }
+}
+
+@media (max-width: $max-mobile-width) {
+    .container {
+        width: 92%;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1599px) {
+    .container--tablet {
+        width: 97.5%;
+    }
+}
+
+@media (max-width: $max-mobile-width) {
+    .container--mobile {
+        width: 95%;
+    }
 }

@@ -69,13 +69,13 @@
         </div>
     </header>
 
-    <main class="registration">
+    <main class="registration ">
         <section class="heading-block">
-            <div class="heading-block container">
+            <div class="heading-block container container--tablet">
                 <h1 class="heading-block__heading">registration</h1>
             </div>
         </section>
-        <section class="registarion__block container">
+        <section class="registarion__block container registarion__block--tablet">
             <div class="registarion__wrapper form-block">
                 <form class="form-block" action="#">
                     <fieldset class="wrapper-form">
@@ -89,6 +89,9 @@
                             <label class="radio-wrapper__label" for="male">Male</label>
                             <input class="radio-wrapper__radio" type="radio" id="female" name="sex" value="Female">
                             <label class="radio-wrapper__label" for="female">Female</label>
+                            <input class="radio-wrapper__radio radio-wrapper__radio--tablet" type="radio" id="other"
+                                name="sex" value="Other">
+                            <label class="radio-wrapper__label radio-wrapper__label--tablet" for="other">Other</label>
                         </div>
                     </fieldset>
                     <fieldset class="wrapper-form">
@@ -109,10 +112,13 @@
                     as soon as you join:</p>
                 <ul class="perks-list">
                     <li class="perks-list__item">15% off welcome offer</li>
-                    <li class="perks-list__item">Free shipping, returns and exchanges on all orders</li>
+                    <li class="perks-list__item">
+                        Free shipping, returns and exchanges on all <span class="perks-list__item--span">orders</span>
+
+                    </li>
                     <li class="perks-list__item">$10 off a purchase on your birthday</li>
                     <li class="perks-list__item">Early access to products</li>
-                    <li class="perks-list__item">Exclusive offers & rewards</li>
+                    <li class="perks-list__item perks-list__item--padding">Exclusive offers & rewards</li>
                 </ul>
             </div>
         </section>

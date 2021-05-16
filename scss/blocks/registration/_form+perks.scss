@@ -1,31 +1,47 @@
 .registration {
 
+    .registarion__block--tablet {
+        @include tablet {
+            width: 100%;
+        }
+    }
+
     .registarion__block {
         padding-top: 64px;
-        display: flex;
-        justify-content: space-between;
+        @include flex-wrap-space-between();
 
-        .registarion__wrapper {
-            width: 359px;
+        @media only screen and (min-width: 767px) and (max-width: 1599px) {
+            justify-content: space-around;
+            padding-top: 40px;
         }
 
-        .form-block {
-            box-sizing: border-box;
+        @include mobile {
+            .registarion__block--tablet {
+                width: 98%;
+            }
 
+            @include flex-coulmn-items-center();
+        }
+
+        .registarion__wrapper {
+            max-width: 359px;
+
+            @include mobile {
+                max-width: 359px;
+            }
         }
 
         .wrapper-form__text {
             @include font(16px, 19px, 300);
-
         }
 
         .wrapper-form__block-info {
-            width: 360px;
+            width: 100%;
             min-height: 45px;
             margin-top: 20px;
             border: 1px solid #A4A4A4;
             padding-left: 17px;
-
+            box-sizing: border-box;
         }
 
         .radio-wrapper {
@@ -41,6 +57,16 @@
             position: relative;
             font-size: 11px;
             line-height: 13px;
+        }
+
+        .radio-wrapper__label--tablet {
+            display: none;
+        }
+
+        @include tablet {
+            .radio-wrapper__label--tablet {
+                display: inline;
+            }
         }
 
         .radio-wrapper__label:before {
@@ -73,6 +99,10 @@
             color: $white-color;
             border: none;
             margin-bottom: 96px;
+
+            @include mobile {
+                margin-bottom: 40px;
+            }
         }
 
         .registration__form-button:after {
@@ -82,31 +112,80 @@
 
         .registration__block-perks {
             width: 610px;
+
+            @include tablet {
+                max-width: 359px;
+                min-height: auto;
+            }
+
+            @include mobile {
+                width: auto;
+                min-height: auto;
+            }
         }
 
         .perks-heading {
-
             text-transform: uppercase;
             @include font(24px, 29px, 300px);
+
+            @include tablet {
+                @include font(16px, 19px);
+            }
         }
 
         .perks-text {
             @include font(24px, 29px, 300px);
             padding-top: 22px;
+
+            @include tablet {
+                @include font(16px, 19px);
+                padding: 32px 0 0 5px;
+            }
+
+            @include mobile {
+                padding-left: 0px;
+            }
         }
 
         .perks-list {
-            padding-top: 21px;
+            padding-top: 37px;
+
+            @include tablet {
+                padding-top: 23px;
+            }
         }
 
         .perks-list__item {
             @include font(24px, 29px, 300px);
-            padding-bottom: 16px;
+            padding-bottom: 24px;
+
+            @include tablet {
+                padding-left: 5px;
+                padding-bottom: 22px;
+                @include font(16px, 19px, 300px);
+
+                .perks-list__item--span {
+                    padding-left: 45px;
+                }
+            }
+
+            @include mobile {
+                padding-left: 0;
+                padding-bottom: 18.18px;
+            }
         }
 
         .perks-list__item:before {
             content: url(../imgs/check-mark.svg);
             padding-right: 22px;
+
+            @include tablet {}
         }
+    }
+}
+
+@include mobile {
+    .perks-list__item--padding {
+        margin-bottom: 91px;
     }
 }

@@ -6,27 +6,52 @@
     }
 
     .stocks__item {
-        width: 360px;
+        width: 31%;
         min-height: 260px;
+        background-size: cover;
         text-align: center;
         @include flex-center();
 
+        @include tablet {
+            min-height: 167px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+            margin-top: 32px;
+        }
+
         &--woman {
             background-image: url(../imgs/art1.jpg);
+            background-position: center center;
         }
 
         &--man {
             background-image: url(../imgs/art2.jpg);
+            background-position: center center;
         }
 
         &--kids {
             background-image: url(../imgs/art3.jpg);
+            background-position: center center;
         }
 
         &--accessories {
             width: 100%;
             background-image: url(../imgs/art4.jpg);
             margin-top: 30px;
+            background-position: center center;
+
+            @include tablet {
+                min-height: 116px;
+                margin-top: 19.38px;
+            }
+
+            @include mobile {
+                min-height: 111px;
+                margin-top: 32px;
+            }
         }
     }
 
