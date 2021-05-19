@@ -1,4 +1,5 @@
 @import "./reset";
+@import "./font";
 @import "./variables";
 @import "./mixins";
 @import "./extend";
@@ -20,3 +21,8 @@
 @import "./blocks/cart/header-cart";
 @import "./blocks/cart/cart-list";
 @import "./blocks/cart/delivery";
+
+@import "./blocks/products/header-product";
+@import "./blocks/products/products-slider";
+@import "./blocks/products/products-list";
+@import "./blocks/products/meta-products";

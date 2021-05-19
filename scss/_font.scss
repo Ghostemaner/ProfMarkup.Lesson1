@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/lato-light.woff2) format('woff2'),
+        url(../fonts/lato-light.woff) format('woff');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/lato-lightitalic.woff2) format("wolf2"),
+        url(/fonts/lato-lightitalic.woff) format("wolf");
+
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/lato-regular.woff2) format("wolf2"),
+        url(/fonts/lato-regular.woff) format("wolf");
+
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/lato-bold.woff2) format("wolf2"),
+        url(/fonts/lato-bold.woff) format("wolf");
+
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/lato-black.woff2) format("wolf2"),
+        url(/fonts/lato-black.woff) format("wolf");
+
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
