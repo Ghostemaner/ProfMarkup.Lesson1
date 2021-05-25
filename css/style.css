@@ -1908,7 +1908,7 @@ button {
 }
 
 .product__meta .meta-names-list__item::after {
-  content: url(../../../imgs/product-meta-arrow.svg);
+  content: url(../imgs/product-meta-arrow.svg);
   position: absolute;
   right: -20px;
 }
@@ -1938,7 +1938,7 @@ button {
 }
 
 .product__meta .meta-items__button:before {
-  content: url(../../../imgs/products-cart.svg);
+  content: url(../imgs/products-cart.svg);
   position: absolute;
   left: 40px;
   top: 10px;
