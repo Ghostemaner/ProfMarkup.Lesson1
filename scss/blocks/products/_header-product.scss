@@ -1,0 +1,40 @@
+.product {
+    .heading-block {
+        min-height: 148px;
+        @include flex-center-space-between();
+        background: #F8F3F4;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .heading-block__heading {
+        color: $darkpink-color;
+        @include font(24px, 29px, normal, normal);
+        text-transform: uppercase;
+
+        @include mobile {
+            padding-bottom: 32px;
+        }
+    }
+
+    .product__breadcrum-list {
+        margin-bottom: 0;
+        padding-bottom: 16px;
+    }
+
+    .breadcrumb-item__item-link {
+        color: #636363;
+    }
+
+    .breadcrumb-item__item-link:hover {
+        color: $darkpink-color;
+    }
+
+    .active--pink {
+        color: $darkpink-color;
+        font-weight: 600;
+    }
+}

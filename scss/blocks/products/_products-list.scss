@@ -1,0 +1,45 @@
+.products-container-bootstrap-fix {
+    width: 71%;
+    margin: 0 auto;
+    padding-bottom: 128px;
+
+    @media only screen and (min-width: 1251px) and (max-width: 1599px) {
+        width: 90.7%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1250px) {
+        width: 98%;
+    }
+
+    @include mobile {
+        width: 50%;
+        padding-bottom: 64px;
+    }
+}
+
+.products {
+    .products__list--product {
+        justify-content: space-between;
+        margin-top: 0;
+
+        @media only screen and (min-width: 768px) and (max-width: 1250px) {
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (max-width: 1250px) and (min-width: 767px) {
+        .products__item--tablet-none-girl {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .products__item--tablet-none-man {
+            display: none;
+        }
+    }
+}

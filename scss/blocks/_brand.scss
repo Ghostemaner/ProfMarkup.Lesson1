@@ -12,6 +12,7 @@
         width: 50%;
         height: auto;
 
+
         @include mobile {
             display: none;
         }
@@ -54,16 +55,16 @@
     }
 
     .brand__heading {
-        @include font(48px, 28.4px, 900);
+        @include font(48px, 28.4px, 700, normal);
         text-transform: uppercase;
         position: relative;
 
         @include tablet {
-            @include font(44px, 23px, 900);
+            @include font(44px, 23px, 700);
         }
 
         @include mobile {
-            @include font(38px, 13px, 900);
+            @include font(38px, 13px, 700);
         }
     }
 
