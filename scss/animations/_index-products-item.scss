@@ -9,7 +9,7 @@
     top: 7px;
 }
 
-.products__item-img--wrapper:before {
+.products__item-img-wrapper:before {
     content: "";
     width: 100%;
     min-height: 420px;
@@ -18,11 +18,11 @@
     top: 0;
 }
 
-.products__item-img--wrapper:before {
+.products__item-img-wrapper:before {
     display: none;
 }
 
-.products__item:hover .products__item-img--wrapper:before {
+.products__item:hover .products__item-img-wrapper:before {
     display: block;
 }
 

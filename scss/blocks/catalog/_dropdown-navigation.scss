@@ -1,0 +1,45 @@
+.dropdown-nav {
+    display: inline;
+}
+
+.dropdown-toggle {
+    border: none;
+    background: white;
+    padding: 0;
+    color: #6F6E6E;
+    position: relative !important;
+
+    @include mobile {
+        @include font(12px, 14px, normal, normal);
+    }
+}
+
+.dropdown-nav {
+    padding-left: 25px;
+}
+
+.dropdown-toggle::after {
+    content: url("../../../imgs/product-meta-arrow.svg");
+    border: none;
+    margin-left: 5px;
+    vertical-align: 1px;
+}
+
+.dropdown-menu {
+    min-width: 103px;
+    min-height: 103px;
+    padding: 15px 10px 10px 10px;
+    @include font(14px, 16px, normal, normal);
+    border-radius: 0;
+    border: none;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.dropdown-menu__item {
+    padding-bottom: 10px;
+}
+
+.dropdown-menu__label {
+    padding-left: 5px;
+    color: #6F6E6E;
+}

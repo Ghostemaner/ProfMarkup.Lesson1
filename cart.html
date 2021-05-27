@@ -15,7 +15,7 @@
 
 <body>
     <header class="header">
-        <div class="header__wrapper container">
+        <div class="header__wrapper container-main">
             <div>
                 <a href="index.html"><img class="header__logo" src="imgs/logo.svg" alt="logo" width="44"
                         height="38"></a>
@@ -71,16 +71,16 @@
 
     <main class="shopping-cart">
         <section class="heading-block">
-            <div class="heading-block container container--tablet">
+            <div class="heading-block container-main container--tablet">
                 <h1 class="heading-block__heading">SHOPPING CART</h1>
             </div>
         </section>
-        <div class="shopping-wrapper container container--tablet container--mobile">
+        <div class="shopping-wrapper container-main container--tablet container--mobile">
             <section class="cart-list">
                 <div class="cart-list__wrapper">
                     <div class="cart-block">
-                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
-                                src="./imgs/man-cart1.jpg" alt="man-cart1"></div>
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img" src="./imgs/card3.jpg"
+                                alt="card3"></div>
                         <div class="cart-block__block-items cart-items">
                             <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
                             <ul class="cart-items__list-desc desc-items">
@@ -100,8 +100,8 @@
                         </div>
                     </div>
                     <div class="cart-block">
-                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img"
-                                src="./imgs/man-cart2.jpg" alt="man-cart2"></div>
+                        <div class="cart-block__img-wrapper cart-img"><img class="cart-img__img" src="./imgs/card7.jpg"
+                                alt="card7"></div>
                         <div class="cart-block__block-items cart-items">
                             <h3 class="cart-items__heading-cart">MANGO PEOPLE T-SHIRT</h3>
                             <ul class="cart-items__list-desc desc-items">
@@ -122,43 +122,44 @@
                     </div>
 
                 </div>
-                <div class="cart-list__button-wrapper"><button class="cart-clear__button" type="button">Clear
+                <div class="cart-list__button-wrapper"><button class="cart-clear-button" type="button">Clear
                         shopping
                         cart</button>
-                    <button class="cart-continue__button" type="button">Continue shopping</button>
+                    <button class="cart-continue-button" type="button">Continue shopping</button>
                 </div>
             </section>
             <section class="delivery">
-
+                <h2 class="visually-hidden">Shipping delivery</h2>
                 <form class="delivery__form" action="#">
-                    <div class="delivery__form-wrapper  delivery-wrapper">
+                    <fieldset class="delivery__form-wrapper  delivery-wrapper">
                         <legend class="delivery-wrapper__text">SHIPPING ADRESS</legend>
-                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                            placeholder="Bangladesh" required>
-                        <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
-                            placeholder="State" required>
-                        <input class="delivery-wrapper__block-info" pattern="[0-9]{6}" type="text"
-                            placeholder="Postcode / Zip" required>
-                        <button class="delivery__form-button" type="button">Get a quote</button>
-                    </div>
+                        <div>
+                            <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                                placeholder="Bangladesh" required>
+                            <input class="delivery-wrapper__block-info" pattern="^[ёЁа-яА-Яa-zA-Z]+$" type="text"
+                                placeholder="State" required>
+                            <input class="delivery-wrapper__block-info" pattern="[0-9]{6}" type="text"
+                                placeholder="Postcode / Zip" required>
+                            <button class="delivery__form-button" type="button">Get a quote</button>
+                        </div>
 
-                    <div class="checkout-delivery">
-                        <p class="sub-price"><span class="sub-price__text">SUB
-                                TOTAL</span><span class="sub-price__value"> $900</span></p>
-                        <p class="total-price"><span class="total-price__text">GRAND
-                                TOTAL</span><span class="total-price__value total-price__value-pink"> $900</span>
-                        </p>
-                        <hr class="hr">
-                        <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
+                        <div class="checkout-delivery">
+                            <p class="sub-price"><span class="sub-price__text">SUB
+                                    TOTAL</span><span class="sub-price__value"> $900</span></p>
+                            <p class="total-price"><span class="total-price__text">GRAND
+                                    TOTAL</span><span class="total-price__value total-price__value-pink"> $900</span>
+                            </p>
+                            <hr class="hr">
+                            <button class="delivery__button-checkout" type="submit">PROCEED TO CHECKOUT</button>
+                        </div>
+                    </fieldset>
                 </form>
-
-        </div>
-        </section>
+            </section>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__wrap container">
+        <div class="footer__wrap container-main">
             <section class="footer__quote">
                 <h2 class="visually-hidden">reviews</h2>
                 <img class="footer__quote-img" src="imgs/girl.png" alt="girl" width="96" height="96">
@@ -168,14 +169,14 @@
             <section class="footer__subscribe ">
                 <h3 class="footer__subscribe-heading">subscribe</h3>
                 <p class="footer__subscribe-text">FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="footer__subscribe-form" action="#">
-                    <input class="subscribe__form-area" type="email" placeholder="Enter Your Email" required>
-                    <button class="subscribe__form-button" type="submit">Subscribe</button>
+                <form class="footer__subscribe-form subscribe-form" action="#">
+                    <input class="subscribe-form__area" type="email" placeholder="Enter Your Email" required>
+                    <button class="subscribe-form__button" type="submit">Subscribe</button>
                 </form>
             </section>
         </div>
         <section class="footer__info">
-            <div class="footer__info-wrap container">
+            <div class="footer__info-wrap container-main">
                 <h2 class="visually-hidden">copyright</h2>
                 <p class="footer__info-copy">© 2021 Brand All Rights Reserved.</p>
                 <ul class="footer__socials-list">

@@ -1,0 +1,61 @@
+.poduct-navigation-filter {
+    padding-top: 51px;
+
+    @include tablet {
+        padding-top: 22px;
+    }
+}
+
+
+.filter-litem__text {
+    font-weight: 600;
+    margin-right: 11px;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.filter-litem__img {
+    @include mobile {
+        width: 37.5px;
+    }
+}
+
+.filter-litem__button {
+    background-color: white;
+    border: none;
+}
+
+.filter-button-sub {
+    padding-top: 13px;
+}
+
+.filter-litem__button {
+    padding: 0;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+.filter-litem__text-modal {
+    color: $darkpink-color;
+}
+
+.filter-litem {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.filter-nav {
+    display: inline-block;
+    width: 81%;
+    text-align: center;
+
+    @include tablet {
+        display: inline;
+        width: auto;
+    }
+
+}

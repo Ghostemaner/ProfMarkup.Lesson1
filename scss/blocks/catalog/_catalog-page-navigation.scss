@@ -1,0 +1,113 @@
+.catalog-page-navigation {
+    padding-top: 45px;
+}
+
+.pagination {
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EBEBEB;
+    border-radius: .25rem;
+    width: 283px;
+    height: 43px;
+    margin: 0 auto;
+
+}
+
+.page-link {
+    border: none;
+    color: #EBEBEB;
+    padding: 6px;
+    @include font(16px, 19px, 300, normal);
+}
+
+.page-item-value {
+    margin-left: -10px;
+
+}
+
+.page-link-value {
+    padding: 6px 0;
+}
+
+.page-link-img {
+    margin-top: 5px;
+    width: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.accordion-block {
+    box-sizing: border-box;
+    width: 365px;
+    min-height: 532px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 0px;
+    background-color: white;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 13px 16px 0 20px;
+
+    @include tablet {
+        top: 20px;
+        left: -5px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.accordion-none {
+    display: none;
+
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: $darkpink-color;
+    box-shadow: none;
+    border-bottom: 1px solid #EBEBEB;
+
+}
+
+.accordion-button::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 10px;
+    width: 5px;
+    height: 37px;
+    background-color: $darkpink-color;
+}
+
+.poduct-navigation-filter {
+    position: relative;
+}
+
+.accordion-body {
+    @include font(16px, 17px, normal, normal);
+    padding: 0 0 20px 16px;
+}
+
+.accordion-body__categoty {
+    padding-top: 15px;
+}
+
+.accordion-item {
+    border: none
+}
+
+.accordion-button {
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid #EBEBEB;
+}
