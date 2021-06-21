@@ -35,7 +35,7 @@
         }
     }
 
-    .brand__heading--text:before {
+    .brand__heading-text:before {
         content: "";
         background-color: $darkpink-color;
         width: 12px;
@@ -68,7 +68,7 @@
         }
     }
 
-    .brand__heading--text {
+    .brand__heading-text {
         @include font(32px, 38.4px, 700);
 
         @include tablet {

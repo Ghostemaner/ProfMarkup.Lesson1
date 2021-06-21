@@ -15,7 +15,7 @@
 
 <body>
     <header class="header">
-        <div class="header__wrapper container">
+        <div class="header__wrapper container-main">
             <div>
                 <img class="header__logo" src="imgs/logo.svg" alt="logo" width="44" height="38">
                 <img class="header__loupe" src="imgs/loupe.svg" alt="loupe" width="26" height="27">
@@ -74,12 +74,12 @@
                 <img class=" brand__image" src="imgs/man-title.jpg" alt="man-title" width="800" height="765">
                 <!--при клике на FASHION будет ввести на весь каталог товаров, я так понимаю все что розовое на странице это все юзабильное, хорошо для СЕО будет.-->
                 <div class="brand__heading-wrapper">
-                    <h1 class="brand__heading">the brand<span class="brand__heading--text"><br>of luxerious<span
+                    <h1 class="brand__heading">the brand<span class="brand__heading-text"><br>of luxerious<span
                                 class="brand__heading-text-pink"> fashion</span></span></h1>
                 </div>
             </div>
         </section>
-        <section class="stocks container container--tablet">
+        <section class="stocks container-main container--tablet container--tablet-index">
             <h2 class="visually-hidden">Stocks</h2>
             <ul class="stocks__list">
                 <li class="stocks__item stocks__item--woman">
@@ -108,14 +108,14 @@
                 </li>
             </ul>
         </section>
-        <section class="products container container--tablet">
+        <section class="products container-main container--tablet container--tablet-index">
             <div class="products__wrap-heading">
                 <h2 class="products__heading-heading">Fetured Items</h2>
                 <p class="products__heading-text">Shop for items based on what we feaured in this week</p>
             </div>
             <ul class="products__list">
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card1.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -125,7 +125,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card2.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -135,7 +135,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card3.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -145,7 +145,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card4.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -155,7 +155,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card5.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -165,7 +165,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card6.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -175,11 +175,11 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
             </ul>
-            <a class="products__link" href="product.html">Browse All Product</a>
+            <a class="products__link" href="catalog.html">Browse All Product</a>
         </section>
         <section class="features">
             <h2 class="visually-hidden">sales & discounts</h2>
-            <ul class="features__list container">
+            <ul class="features__list container-main">
                 <li class="features__item"><img src="imgs/car.svg" alt="car" width="45" height="32">
                     <h3 class="features__item-heading">Free Delivery</h3>
                     <p class="features__item-text">Worldwide delivery on all. Authorit tively morph next-generation
@@ -205,8 +205,7 @@
         </section>
     </main>
     <footer class="footer">
-
-        <div class="footer__wrap container">
+        <div class="footer__wrap container-main">
             <section class="footer__quote">
                 <h2 class="visually-hidden">reviews</h2>
                 <img class="footer__quote-img" src="imgs/girl.png" alt="girl" width="96" height="96">
@@ -216,17 +215,16 @@
             <section class="footer__subscribe ">
                 <h3 class="footer__subscribe-heading">subscribe</h3>
                 <p class="footer__subscribe-text">FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="footer__subscribe-form" action="#">
-                    <input class="subscribe__form-area" type="email" placeholder="Enter Your Email" required>
-                    <button class="subscribe__form-button" type="submit">Subscribe</button>
+                <form class="footer__subscribe-form subscribe-form" action="#">
+                    <input class="subscribe-form__area" type="email" placeholder="Enter Your Email" required>
+                    <button class="subscribe-form__button" type="submit">Subscribe</button>
                 </form>
             </section>
         </div>
         <section class="footer__info">
-            <div class="footer__info-wrap container">
+            <div class="footer__info-wrap container-main">
                 <h2 class="visually-hidden">copyright</h2>
                 <p class="footer__info-copy">© 2021 Brand All Rights Reserved.</p>
-
                 <ul class="footer__socials-list">
                     <li class="footer__socials-item"><a href="#"><img src="imgs/facebook.svg" alt="facebook" width="32"
                                 height="32"></a></li>

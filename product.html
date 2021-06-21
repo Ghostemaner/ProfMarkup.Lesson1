@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <div class="header__wrapper container">
+        <div class="header__wrapper container-main">
             <div>
                 <a href="index.html"><img class="header__logo" src="imgs/logo.svg" alt="logo" width="44"
                         height="38"></a>
@@ -71,14 +71,14 @@
     </header>
     <main class="product">
         <section class="product__heading heading-block">
-            <div class="heading-block container container--tablet">
+            <div class="heading-block container-main container--tablet">
                 <h1 class="heading-block__heading">NEW ARRIVALS</h1>
                 <nav aria-label="breadcrumb product__breadcrumb">
                     <ol class="breadcrumb product__breadcrum-list">
                         <li class="breadcrumb-item"><a class="breadcrumb-item__item-link" href="#">HOME</a></li>
                         <li class="breadcrumb-item "><a class="breadcrumb-item__item-link" href="#">MEN</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><a
-                                class="breadcrumb-item__item-link active--pink" href="#">NEW
+                                class="breadcrumb-item__item-link active-pink" href="#">NEW
                                 ARRIVALS</a>
                         </li>
                     </ol>
@@ -86,6 +86,7 @@
             </div>
         </section>
         <section class="product__slider">
+            <h2 class="visually-hidden">Product slider preview</h2>
             <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner carousel-inner-center">
                     <div class="carousel-item active">
@@ -121,11 +122,11 @@
                     collaborative architectures before cutting-edge services. Completely visualize parallel core
                     competencies rather than exceptional portals.
                 </p>
-                <p class="meta-items__price"><span class="meta-items__price--value">$561</span></p>
+                <p class="meta-items__price"><span class="meta-items__price-value">$561</span></p>
                 <hr class="meta-items__hr">
                 <ul class="meta-items__list meta-names-list">
                     <li class="meta-names-list__item">CHOOSE COLOR</li>
-                    <li class="meta-names-list__item">CHOOSE SIZE </li>
+                    <li class="meta-names-list__item">CHOOSE SIZE</li>
                     <li class="meta-names-list__item">QUANTITY</li>
                 </ul>
                 <button class="meta-items__button">Add to Cart</button>
@@ -134,7 +135,7 @@
         <section class="products products-container-bootstrap-fix">
             <ul class="products__list products__list--product">
                 <li class="products__item">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card4.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -144,7 +145,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item products__item--tablet-none-man">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card3.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -154,7 +155,7 @@
                     <button class="products__item-button" type="button">Add to Cart</button>
                 </li>
                 <li class="products__item products__item--tablet-none-girl">
-                    <div class="products__item-img--wrapper">
+                    <div class="products__item-img-wrapper">
                         <img class="products__item-img" src="imgs/card6.jpg" alt="card1" width="360" height="420">
                     </div>
                     <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
@@ -167,7 +168,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrap container">
+        <div class="footer__wrap container-main">
             <section class="footer__quote">
                 <h2 class="visually-hidden">reviews</h2>
                 <img class="footer__quote-img" src="imgs/girl.png" alt="girl" width="96" height="96">
@@ -177,14 +178,14 @@
             <section class="footer__subscribe ">
                 <h3 class="footer__subscribe-heading">subscribe</h3>
                 <p class="footer__subscribe-text">FOR OUR NEWLETTER AND PROMOTION</p>
-                <form class="footer__subscribe-form" action="#">
-                    <input class="subscribe__form-area" type="email" placeholder="Enter Your Email" required>
-                    <button class="subscribe__form-button" type="submit">Subscribe</button>
+                <form class="footer__subscribe-form subscribe-form" action="#">
+                    <input class="subscribe-form__area" type="email" placeholder="Enter Your Email" required>
+                    <button class="subscribe-form__button" type="submit">Subscribe</button>
                 </form>
             </section>
         </div>
         <section class="footer__info">
-            <div class="footer__info-wrap container">
+            <div class="footer__info-wrap container-main">
                 <h2 class="visually-hidden">copyright</h2>
                 <p class="footer__info-copy">© 2021 Brand All Rights Reserved.</p>
                 <ul class="footer__socials-list">

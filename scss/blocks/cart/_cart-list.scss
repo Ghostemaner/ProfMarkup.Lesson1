@@ -40,6 +40,9 @@
     }
 
     .cart-img__img {
+        width: 262px;
+        height: 306px;
+
         @include mobile {
             width: 144px;
             height: 188px;
@@ -149,7 +152,7 @@
         }
     }
 
-    .cart-clear__button {
+    .cart-clear-button {
         width: 235px;
         height: 50px;
         background-color: $clear-white-color;
@@ -167,7 +170,7 @@
         }
     }
 
-    .cart-continue__button {
+    .cart-continue-button {
         width: 225px;
         height: 50px;
         background-color: $clear-white-color;

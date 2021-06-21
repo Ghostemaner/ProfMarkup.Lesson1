@@ -1,12 +1,12 @@
 .registration {
 
-    .registarion__block--tablet {
+    .registration__block--tablet {
         @include tablet {
             width: 100%;
         }
     }
 
-    .registarion__block {
+    .registration__block {
         padding-top: 64px;
         @include flex-wrap-space-between();
 
@@ -16,14 +16,14 @@
         }
 
         @include mobile {
-            .registarion__block--tablet {
+            .registration__block--tablet {
                 width: 98%;
             }
 
             @include flex-coulmn-items-center();
         }
 
-        .registarion__wrapper {
+        .registration__wrapper {
             max-width: 359px;
 
             @include mobile {
@@ -164,7 +164,7 @@
                 padding-bottom: 22px;
                 @include font(16px, 19px, 300px);
 
-                .perks-list__item--span {
+                .perks-list__item-span {
                     padding-left: 45px;
                 }
             }
