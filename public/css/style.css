@@ -282,6 +282,43 @@ button {
   top: -22px;
 }
 
+.header .header__cartlist-counter {
+  position: absolute;
+  color: white;
+  top: -22px;
+  right: -7px;
+  font-size: 12px;
+  margin-right: 1px;
+}
+
+.header .header__wrapper-wrap {
+  display: flex;
+}
+
+.header .header__wrapper-search {
+  display: flex;
+}
+
+.header .search-form__button {
+  border: 0;
+  background: transparent;
+}
+
+.header .header__loupe {
+  width: 37px;
+  height: 32px;
+}
+
+.header .search-form__input {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .header__navigation-none {
   display: none;
 }
@@ -289,7 +326,6 @@ button {
 .header__navigation-block {
   width: 232px;
   min-height: 765px;
-  display: block;
   position: absolute;
   right: 0px;
   top: 75px;
@@ -2263,7 +2299,7 @@ button {
 }
 
 .dropdown-toggle::after {
-  content: url("C:/Users/Andrew/Desktop/ProfMarkup.Course/ProfMarkup.Lesson1/imgs/product-meta-arrow.jpg");
+  content: url(../imgs/product-meta-arrow.jpg);
   border: none;
   margin-left: 5px;
   vertical-align: 1px;

@@ -15,60 +15,29 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__wrapper container-main">
-            <div>
+            <div class="header__wrapper-wrap">
                 <a href="index.html"><img class="header__logo" src="imgs/logo.svg" alt="logo" width="44"
                         height="38"></a>
-                <img class="header__loupe" src="imgs/loupe.svg" alt="loupe" width="26" height="27">
+                <form class="header__wrapper-search search-form" action="" method="get">
+                    <input class="search-form__input" name="s" placeholder="Искать здесь..." type="search">
+                    <button class="search-form__button" type="submit"><img class="header__loupe" src="imgs/loupe.svg"
+                            alt="loupe" width="26" height="27"></button>
+                </form>
             </div>
             <div>
-                <button class="header__menu-button" id="burger" type="button"><img src="imgs/burger.svg" alt="burger"
-                        width="32" height="23"></button>
+                <button class="header__menu-button" type="button" @click='showMenu = !showMenu'><img
+                        src="imgs/burger.svg" alt="burger" width="32" height="23"></button>
                 <a class="header__link" href="registration.html"><img src="imgs/reg.svg" alt="registarion"></a>
-                <a class="header__link header__link-position" href="#"><img src="imgs/cart.svg" alt="cart">
-                    <img class="header__cartlist" src="imgs/cart-list.svg" alt="cart-list"></a>
-                <!--здесь с помощью JS будет отображаться количество товаров в корзине-->
-                <nav class="header__navigation-none" id="menu">
-                    <button class="header__navigation-button" id="close"><img src="imgs/close-menu.svg"
-                            alt="close"></button>
-                    <h2 class="header__navigation-title">menu</h2>
-                    <ul class="header__navigation-list">
-                        <li class="header__navigation-item navigation-item">
-                            <a class="navigation-item__link" href="#">man</a>
-                            <ul class="navigation-item__sublist">
-                                <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Bags</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Denim</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navigation-item navigation-item">
-                            <a class="navigation-item__link" href="#">woman</a>
-                            <ul class="navigation-item__sublist">
-                                <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Jackets & Coats</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Polos</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Shirts</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__navigation-item navigation-item">
-                            <a class="navigation-item__link" href="#">kids</a>
-                            <ul class="navigation-item__sublist">
-                                <li><a class="navigation-item__sublist-link" href="#">Accessories</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Jackets & Coats</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Polos</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">T-Shirts</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Shirts</a></li>
-                                <li><a class="navigation-item__sublist-link" href="#">Bags</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+                <a class="header__link header__link-position" href="cart.html"><img src="imgs/cart.svg" alt="cart">
+                    <img class="header__cartlist" src="imgs/cart-list.svg" alt="cart-list"><span
+                        class="header__cartlist-counter">0</span></a>
+                <menu-nav :visibility="showMenu"></menu-nav>
             </div>
         </div>
     </header>
+
     <main class="product">
         <section class="product__heading heading-block">
             <div class="heading-block container-main container--tablet">
@@ -204,7 +173,9 @@
     </footer>
 
     <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/modal-all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="scripts/menuComp.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 
