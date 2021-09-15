@@ -20,8 +20,8 @@
             <div class="header__wrapper-wrap">
                 <a href="index.html"><img class="header__logo" src="imgs/logo.svg" alt="logo" width="44"
                         height="38"></a>
-                <form class="header__wrapper-search search-form" action="" method="get">
-                    <input class="search-form__input" name="s" placeholder="Искать здесь..." type="search">
+                <form class="header__wrapper-search search-form" @submit.prevent="filter" action="#">
+                    <input class="search-form__input" v-model='userSearch' placeholder="Искать здесь..." type="search">
                     <button class="search-form__button" type="submit"><img class="header__loupe" src="imgs/loupe.svg"
                             alt="loupe" width="26" height="27"></button>
                 </form>
@@ -32,7 +32,7 @@
                 <a class="header__link" href="registration.html"><img src="imgs/reg.svg" alt="registarion"></a>
                 <a class="header__link header__link-position" href="cart.html"><img src="imgs/cart.svg" alt="cart">
                     <img class="header__cartlist" src="imgs/cart-list.svg" alt="cart-list"><span
-                        class="header__cartlist-counter">0</span></a>
+                        class="header__cartlist-counter"></span></a>
                 <menu-nav :visibility="showMenu"></menu-nav>
             </div>
         </div>
@@ -56,7 +56,7 @@
         </section>
         <section class="poduct-navigation-filter navigation-filter container-main container--tablet container--mobile">
             <div class="navigation-filter__wrapper filter-litem">
-                <button id="filter-button" class="filter-litem__button"><span
+                <button id="filter-button" @click="showFilter = !showFilter" class="filter-litem__button"><span
                         class="filter-litem__text">FILTER</span><img class="filter-litem__img" src="imgs/filter.svg"
                         alt="filter"></button>
                 <div class="filter-nav">
@@ -122,182 +122,12 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion navigation-filter__accordion accordion-none" id="accordionExample">
-                <button id="filter-button-sub" class="filter-litem__button"><span
-                        class="filter-litem__text filter-litem__text-modal">FILTER</span><img
-                        class="filter-litem__img filter-litem__img-modal" src="imgs/filter-modal.svg"
-                        alt="filter-modal"></button>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            CATEGORY
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li class="accordion-body__categoty">Accessories</li>
-                                <li class="accordion-body__categoty">Bags</li>
-                                <li class="accordion-body__categoty">Denim</li>
-                                <li class="accordion-body__categoty">Hoodies & Sweatshirts</li>
-                                <li class="accordion-body__categoty">Jackets & Coats</li>
-                                <li class="accordion-body__categoty">Polos</li>
-                                <li class="accordion-body__categoty">Shoes</li>
-                                <li class="accordion-body__categoty">Sweaters & Knits</li>
-                                <li class="accordion-body__categoty">T-Shirts</li>
-                                <li class="accordion-body__categoty">Tanks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            BRAND
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li class="accordion-body__categoty">Accessories</li>
-                                <li class="accordion-body__categoty">Bags</li>
-                                <li class="accordion-body__categoty">Denim</li>
-                                <li class="accordion-body__categoty">Hoodies & Sweatshirts</li>
-                                <li class="accordion-body__categoty">Jackets & Coats</li>
-                                <li class="accordion-body__categoty">Polos</li>
-                                <li class="accordion-body__categoty">Shoes</li>
-                                <li class="accordion-body__categoty">Sweaters & Knits</li>
-                                <li class="accordion-body__categoty">T-Shirts</li>
-                                <li class="accordion-body__categoty">Tanks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            DESIGNER
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li class="accordion-body__categoty">Accessories</li>
-                                <li class="accordion-body__categoty">Bags</li>
-                                <li class="accordion-body__categoty">Denim</li>
-                                <li class="accordion-body__categoty">Hoodies & Sweatshirts</li>
-                                <li class="accordion-body__categoty">Jackets & Coats</li>
-                                <li class="accordion-body__categoty">Polos</li>
-                                <li class="accordion-body__categoty">Shoes</li>
-                                <li class="accordion-body__categoty">Sweaters & Knits</li>
-                                <li class="accordion-body__categoty">T-Shirts</li>
-                                <li class="accordion-body__categoty">Tanks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <filter-menu :visibility="showFilter"></filter-menu>
         </section>
         <section class="products container-main container--tablet-catalog">
-            <ul class="products__list products__list-catalog-grid">
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card1.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card7.jpg" alt="card7" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item products__item--tablet-none-man-catalog">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card3.jpg" alt="card3" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card4.jpg" alt="card4" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card8.jpg" alt="card8" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card9.jpg" alt="card9" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card10.jpg" alt="card10" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card11.jpg" alt="card11" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card12.jpg" alt="card12" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-            </ul>
+
+            <products-list :products="filtered"></products-list>
+
             <div class="catalog-page-navigation">
                 <nav aria-label="catalog-page-navigation">
                     <ul class="pagination">
@@ -395,6 +225,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!--<script src="scripts/modal-all.js"></script>-->
     <script src="scripts/menuComp.js"></script>
+    <script src="scripts/catalogComp.js"></script>
+    <script src="scripts/filterMenuComp.js"></script>
+    <script src="scripts/cartComp.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

@@ -19,8 +19,8 @@
             <div class="header__wrapper-wrap">
                 <a href="index.html"><img class="header__logo" src="imgs/logo.svg" alt="logo" width="44"
                         height="38"></a>
-                <form class="header__wrapper-search search-form" action="" method="get">
-                    <input class="search-form__input" name="s" placeholder="Искать здесь..." type="search">
+                <form class="header__wrapper-search search-form" @submit.prevent="filter" action="#">
+                    <input class="search-form__input" v-model='userSearch' placeholder="Искать здесь..." type="search">
                     <button class="search-form__button" type="submit"><img class="header__loupe" src="imgs/loupe.svg"
                             alt="loupe" width="26" height="27"></button>
                 </form>
@@ -79,71 +79,10 @@
         </section>
         <section class="products container-main container--tablet container--tablet-index">
             <div class="products__wrap-heading">
-                <h2 class="products__heading-heading">Fetured Items</h2>
+                <h2 class="products__heading-heading">Featured Items</h2>
                 <p class="products__heading-text">Shop for items based on what we feaured in this week</p>
             </div>
-            <ul class="products__list">
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card1.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card2.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card3.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card4.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card5.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-                <li class="products__item">
-                    <div class="products__item-img-wrapper">
-                        <img class="products__item-img" src="imgs/card6.jpg" alt="card1" width="360" height="420">
-                    </div>
-                    <h3 class="products__item-heading">ELLERY X M'O CAPSULE</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text-pink">$52.00</p>
-                    <button class="products__item-button" type="button">Add to Cart</button>
-                </li>
-            </ul>
+            <featured-list :products="featureFiltered"></featured-list>
             <a class="products__link" href="catalog.html">Browse All Product</a>
         </section>
         <section class="features">
@@ -211,6 +150,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="scripts/menuComp.js"></script>
+    <script src="scripts/featuredItemsComp.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
