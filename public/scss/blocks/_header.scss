@@ -50,9 +50,13 @@
 
     .header__wrapper-search {
         display: flex;
+
+        @include mobile {
+            display: none;
+        }
     }
 
-    .search-form {}
+    
 
     .search-form__button {
         border: 0;

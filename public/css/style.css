@@ -304,6 +304,12 @@ button {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .header .header__wrapper-search {
+    display: none;
+  }
+}
+
 .header .search-form__button {
   border: 0;
   background: transparent;
